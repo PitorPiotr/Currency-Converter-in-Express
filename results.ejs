@@ -1,0 +1,39 @@
+<%- include("partials/header") %>
+
+    <div class="container">
+
+        <div class="icons">
+            <i class="dollar sign icon huge"></i>
+            <i class="euro sign icon huge"></i>
+            <i class="pound sign icon huge"></i>
+            <i class="yen sign icon huge"></i>
+        </div>
+
+
+        <h1>
+            <%=howMuch%>
+                <%=fromCurr%> =
+                    <%=Math.round(count * howMuch *100)/100%>
+                        <%=toCurr%>
+        </h1>
+
+        <h2>
+            <%=fromCurr%> ----->
+                <%=toCurr%> =
+                    <%=Math.round(count*1000)/1000%>
+        </h2>
+
+        <br>
+        <a class="btn btn-primary" href="/" role="button">Convert Again</a>
+        <br>
+        <div class="icons">
+            <i class="dollar sign icon huge"></i>
+            <i class="euro sign icon huge"></i>
+            <i class="pound sign icon huge"></i>
+            <i class="yen sign icon huge"></i>
+        </div>
+
+    </div>
+
+
+    <%- include("partials/footer") %>
